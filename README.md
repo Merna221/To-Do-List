@@ -1,4 +1,4 @@
-# To-Do List Web App
+# To-Do List Website
 
 A simple, clean, and responsive To-Do List built with **HTML**, **CSS**, and **JavaScript**.
 
