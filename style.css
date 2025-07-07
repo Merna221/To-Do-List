@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI" , sans-serif;
+  background: #f3f4f6;
+  padding: 20px;
+}
+
+.container {
+  max-width: 500px;
+  margin: auto;
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1)
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.input-section {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input {
+  flex: 1;
+  padding: 10px 15px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  transition: border 0.2s;
+}
+
+input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+button {
+  padding: 10px 18px;
+  background-color: #007bff;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.todo-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.todo-item {
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  align-items: center;
+  padding: 12px 16px;
+  background: #f8fafc;
+  border-radius: 10px;
+  border: 1px solid #d0d7df;
+  transition: transform 0.1s;
+}
+
+.todo-item:hover {
+  transform: scale(1.01);
+}
+
+.todo-text {
+  text-align: left;
+  font-size: 16px;
+  color: #333;
+  word-break: break-word;
+}
+
+.todo-btn {
+  background: none;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  color: #555;
+  padding: 4px 8px;
+  border-radius: 6px;
+  transition: background 0.2s, color 0.2s;
+}
+
+.todo-btn:hover {
+  background: #e2e8f0;
+  color: #d11a2a;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .input-section {
+    flex-direction: column;
+  }
+
+  button {
+    width: 100%;
+  }
+}
+
+.todo-item {
+  grid-template-columns: auto 1fr auto auto;
+  gap: 10px;
+}
+
+.todo-text.done {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.todo-item input[type="text"].todo-text {
+  border: none;
+  background: transparent;
+  font-size: 16px;
+  color: #333;
+  padding: 5px;
+  width: 100%;
+}
+
+.todo-item input[type="text"].todo-text:read-only {
+  cursor: default;
+}
+
+.todo-item input[type="text"].todo-text.done {
+  text-decoration: line-through;
+  color: gray;
+}
