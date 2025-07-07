@@ -1,20 +1,25 @@
-To-Do List Web App
-A simple, responsive To-Do List built with HTML, CSS, and JavaScript.
+# To-Do List Web App
 
-Features:
-Add new tasks
+A simple, clean, and responsive To-Do List built with **HTML**, **CSS**, and **JavaScript**.
 
-Mark tasks as complete ✅
+## Features
 
-Edit tasks directly in the list
+- Add new tasks  
+- Edit tasks directly in the list  
+-  Mark tasks as complete  
+- Delete tasks with confirmation  
+- Data is saved using `localStorage` (no backend needed)
 
-Delete tasks with confirmation
+## How It Works
 
-Saves all tasks using localStorage (no database needed)
+- All to-do items are stored locally in your browser using `localStorage`.
+- Tasks can be edited directly in the list and saved.
+- Marked completed tasks show with a strikethrough.
+- Responsive design — works on both desktop and mobile.
 
-How it works:
-Tasks are stored in the browser, so they stay even after refreshing the page.
+## Technologies Used
 
-You can edit tasks inline and save changes easily.
+- HTML5  
+- CSS3  
+- JavaScript
 
-Built for desktop and mobile — works on any device!
